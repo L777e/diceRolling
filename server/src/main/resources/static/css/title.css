@@ -1,0 +1,235 @@
+
+.head_container_dice_rolling_game {
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    position: absolute;
+    width: 1317px;
+    height: 118px;
+    left: 62px;
+    top: 93px;
+}
+
+.head_dice_rolling_game {
+    font-family: 'Bungee Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.main_container{
+    /*position: relative;*/
+    margin: 5% auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.subhead_container_login{
+    position: absolute;
+    width: 1000px;
+    height: 117px;
+    left: 242px;
+    top: 200px;
+}
+
+.subhead_login{
+    font-family: 'Bungee Inline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+/*signup page*/
+
+.signupPage_head_container_dice_rolling_game {
+    /*text-align: center;*/
+    /*margin: 0 auto;*/
+    position: absolute;
+    width: 1317px;
+    height: 118px;
+    left: 62px;
+    top: 50px;
+}
+
+.signupPage_head_dice_rolling_game {
+    font-family: 'Bungee Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 96px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.subhead_signup{
+    position: absolute;
+    width: 961px;
+    height: 78px;
+    left: 254px;
+    top: 150px;
+
+    text-align: center;
+
+}
+
+.subhead_signup_font{
+    font-family: 'Bungee inline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+
+    color: #FFFFFF;
+}
+
+.accountSettingPage_head_container_dice_rolling_game{
+    position: absolute;
+    width: 1317px;
+    height: 118px;
+    left: 62px;
+    top: 10px;
+}
+
+.subhead_accountSetting{
+    position: absolute;
+    width: 700px;
+    height: 43px;
+    left: 500px;
+    top: 120px;
+}
+
+.subhead_accountSetting_font{
+    font-family: 'Bungee inline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.changePasswordPage_head_container_dice_rolling_game{
+    position: absolute;
+    width: 1317px;
+    height: 118px;
+    left: 62px;
+    top: 40px;
+}
+
+.subhead_container_changePassword{
+    position: absolute;
+    width: 368px;
+    height: 43px;
+    left: 545px;
+    top: 140px;
+}
+
+.subhead_changePassword{
+    font-family: 'Bungee inline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.subhead_container_createGame{
+    position: absolute;
+    width: 299px;
+    height: 43px;
+    left: 570px;
+    top: 200px;
+}
+
+.subhead_createGame{
+    font-family: 'Bungee inline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.subhead_container_joinGame{
+    position: absolute;
+    width: 1000px;
+    height: 117px;
+    left: 242px;
+    top: 210px;
+
+    text-align: center;
+}
+
+.subhead_joinGame{
+    font-family: 'Bungee inline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+.subhead_HELLFIRE_DRAGON{
+    position: absolute;
+    width: 309px;
+    height: 29px;
+    left: 591px;
+    top: 37px;
+}
+
+.subhead_HELLFIRE_DRAGON_font{
+    font-family: 'Bungee Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    /* identical to box height */
+
+
+    color: #00FFD1;
+}
+
+
+.subhead_container_loadGame{
+    position: absolute;
+    width: 1000px;
+    height: 117px;
+    left: 242px;
+    top: 210px;
+}
+
+.subhead_loadGame{
+    font-family: 'Bungee inline';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+
+

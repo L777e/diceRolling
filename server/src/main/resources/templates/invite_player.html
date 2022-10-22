@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Invite Player</title>
+    <link rel="stylesheet" th:href="@{/css/font.css}"/>
+    <link rel="stylesheet" th:href="@{/css/background.css}"/>
+    <link rel="stylesheet" th:href="@{/css/title.css}"/>
+    <link rel="stylesheet" th:href="@{/css/button_afterlogin.css}"/>
+    <script src="/script/page_uitl.js"></script>
+</head>
+<body>
+<div class = "main_container">
+    <div class="bg_chapel">
+        <div class="subhead_HELLFIRE_DRAGON">
+            <h1 class="subhead_HELLFIRE_DRAGON_font">HELL FIRE AND DRAGON</h1>
+        </div>
+
+<!--        invite & quit button-->
+        <div class = "gameCenter_invite">
+            <form th:action="@{/}" method="get" >
+                <button class = "gameCenter_invite_font" type="submit">INVITE</button>
+            </form>
+        </div>
+
+        <div class = "gameCenter_quit">
+            <form th:action="@{/}" method="get" >
+                <button class = "gameCenter_quit_font" type="submit">QUIT</button>
+            </form>
+        </div>
+
+<!--        personal info and invite box-->
+        <!--        personal info box-->
+
+        <div class = "personal_playerName">
+        </div>
+
+        <p class = "personal_playerName_font">Player Name</p>
+
+        <button type='button'  class = "personal_pic_button" onclick="showPersonalInfo()"></button>
+        <div id = "demo_personalInfo" class = "demo_personalInfo" style='display: none'>
+            <p class = "personal_firstName">FIRST NAME:</p>
+            <p class = "personal_lastName">LAST NAME:</p>
+            <p class = "personal_email">EMAIL:</p>
+
+            <!--            hard code-->
+            <p class = "personal_firstName_fill">ALEX</p>
+            <p class = "personal_lastName_fill">SWIFT</p>
+            <p class = "personal_email_fill">alex.swift@gmail.com</p>
+
+            <div class = "personal_edit">
+                <form th:action="@{account_settings}" method="get">
+                    <button class = "personal_font" type="submit">Edit</button>
+                </form>
+            </div>
+            <div class = "personal_logout">
+                <form th:action="@{logout}" method="post">
+                    <button type="submit" class = "personal_font">Logout</button>
+                </form>
+            </div>
+        </div>
+
+
+        <!--invitation Box-->
+        <button type='button'  class = "invite_button" onclick="showInviteInfo()"></button>
+        <div id = "demo_inviteInfo" class = "demo_inviteInfo" style='display: none'>
+            <!--        hard code-->
+            <p class = "inviteInfo_fromPlayer1">@player 1 invite you to game ?</p>
+            <div class = "inviteInfo_accept">
+                <button type="submit" class = "inviteInfo_button_font">ACCEPT</button>
+            </div>
+            <div class = "inviteInfo_cancel">
+                <button type="submit" class = "inviteInfo_button_font">CANCEL</button>
+            </div>
+        </div>
+
+<!--        search boxes-->
+
+        <div class = "joinGamePage_advancedSearch">
+            <p class = "joinGamePage_advancedSearch_font"> ADVANCED SEARCH</p>
+        </div>
+
+<!--        joinGamePage_name -> invitePage_username-->
+        <div class = "joinGamePage_name">
+            <p class = "joinGamePage_searchBox_font">USERNAME:</p>
+        </div>
+
+        <!--        joinGamePage_id -> invitePage_firstName-->
+        <div class = "joinGamePage_id">
+            <p class = "joinGamePage_searchBox_font">FIRST NAME:</p>
+        </div>
+
+        <!--        joinGamePage_playerNum -> invitePage_lastName-->
+        <div class = "joinGamePage_playerNum">
+            <p class = "joinGamePage_searchBox_font">LAST NAME:</p>
+        </div>
+
+        <!--        joinGamePage_creator -> invitePage_email-->
+        <div class = "joinGamePage_creator">
+            <p class = "joinGamePage_searchBox_font">EMAIL:</p>
+        </div>
+
+        <label for="searchBox-1"></label><input type="text" id="searchBox-1" placeholder="Search USERNAME" onkeyup="filter(0, id)" class = "joinGamePage_name_placeholder">
+        <label for="searchBox-2"></label><input type="text" id="searchBox-2" placeholder="Search FIRST NAME" onkeyup="filter(1,id)" class = "joinGamePage_id_placeholder">
+        <label for="searchBox-3"></label><input type="text" id="searchBox-3" placeholder="Search LAST NAME" onkeyup="filter(2,id)" class = "joinGamePage_numPlayer_placeholder">
+        <label for="searchBox-4"></label><input type="text" id="searchBox-4" placeholder="Search EMAIL" onkeyup="filter(3,id)" class = "joinGamePage_creator_placeholder">
+
+        <!--game list-->
+        <div class = "joinGamePage_gameList">
+            <table id = "table">
+                <tr>
+                    <th scope = "row" class = "joinGamePage_gameList_name"><p class = "joinGamePage_gameList_row_font">USERNAME</p></th>
+                    <th scope = "row" class = "joinGamePage_gameList_id"><p class = "joinGamePage_gameList_row_font">FIRST NAME</p></th>
+                    <th scope = "row" class = "joinGamePage_gameList_playerNum"><p class = "joinGamePage_gameList_row_font">LAST NAME</p></th>
+                    <th scope = "row" class = "joinGamePage_gameList_creator"><p class = "joinGamePage_gameList_row_font">EMAIL</p></th>
+
+                </tr>
+
+                <tbody class = "tbody">
+                <tr>
+                    <td>player1</td>
+                    <td>Swift</td>
+                    <td>marian</td>
+                    <td>marian@gmail.com</td>
+                    <td><label><input type = "checkbox">Join?</label></td>
+                </tr>
+                <tr>
+                    <td>player2</td>
+                    <td>Wong</td>
+                    <td>ALex</td>
+                    <td>alex@gmail.com</td>
+                    <td><label><input type = "checkbox">Join?</label></td>
+                </tr>
+                <tr>
+                    <td>player3</td>
+                    <td>White</td>
+                    <td>Julie</td>
+                    <td>julie@gmail.com</td>
+                    <td><label><input type = "checkbox">Join?</label></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!--        back and ok button-->
+
+        <div class = "joinGamePage_OK">
+            <input class = "joinGamePag_OkBack_font" type="submit" value="OK" />
+        </div>
+
+        <div class = "joinGamePage_back">
+            <form th:action="@{/}" method="get" >
+                <button class = "joinGamePag_OkBack_font" type="submit">BACK</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>
